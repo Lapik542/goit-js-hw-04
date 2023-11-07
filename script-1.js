@@ -37,6 +37,16 @@ cars[1].currency = 'UAH';
 cars[0].price = 12000;
 console.log(cars[0]);
 console.log(cars[1]);
+console.log(cars[2].modal
+   + ' ' +
+   cars[2].engine.modal
+   + ', ' +
+   cars[2].speed
+   + ', ' +
+   cars[2].price
+   + ' ' +
+   cars[2].currency
+);
 
 
 
