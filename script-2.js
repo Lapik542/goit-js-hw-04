@@ -2,13 +2,13 @@ function calcAverageCalories(days) {
    let sum = 0;
    let count = 0;
    for (const day in days) {
-      if (typeof day.calories === 'number') {
-         sum += day.calories;
+      if (typeof days[key] === "number") {
+         sum += days[key];
          count++;
       }
    }
    let average = sum / count;
-   return days;
+   return average;
 }
 console.log(
   calcAverageCalories([
