@@ -1,4 +1,14 @@
 function calcAverageCalories(days) {
+   let sum = 0;
+   let count = 0;
+   for (const day in days) {
+      if (typeof day.calories === 'number') {
+         sum += day.calories;
+         count++;
+      }
+   }
+   let average = sum / count;
+   return days;
 }
 console.log(
   calcAverageCalories([
@@ -23,31 +33,3 @@ console.log(
     { day: "sunday", calories: 2610 }
   ])
 ); // 2270
-
-// console.log(
-//   calcAverageCalories([])
-// ); // 0
-
-// const cars = [
-//    { model: 'BMW', price: 10000 },
-//    {model: 'AUDI', price: 12000 },
-//    {model: 'VOLVO', price: 16000 },
-// ]
-// const name = [
-//    {model: 'Alex', age: 16},
-//    {model: 'Sofia', age: 20},
-//    {model: 'Margo', age: 17},
-// ]
-// const num = [
-//    {model: '10'},
-//    {model: '100'},
-//    {model: '1000'},
-// ]
-
-// for (const key in name) {
-//    if (Object.hasOwnProperty.call(name, key)) {
-//       const element = name[key];
-//       console.log(element.age);
-      
-//    }
-// }
